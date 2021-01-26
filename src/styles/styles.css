@@ -1,0 +1,1816 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, option, select, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, section{
+    margin:0;
+    padding:0;
+    border:none;
+}
+
+@font-face {
+    font-family: 'TT Travels';
+    src: url('../fonts/TTTravels-Italic.eot');
+    src: local('TT Travels Italic'), local('TTTravels-Italic'),
+    url('../fonts/TTTravels-Italic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTTravels-Italic.woff') format('woff'),
+    url('../fonts/TTTravels-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Travels';
+    src: url('../fonts/TTTravels-ExtraLight.eot');
+    src: local('TT Travels ExtraLight'), local('TTTravels-ExtraLight'),
+    url('../fonts/TTTravels-ExtraLight.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTTravels-ExtraLight.woff') format('woff'),
+    url('../fonts/TTTravels-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Travels';
+    src: url('../fonts/TTTravels-MediumItalic.eot');
+    src: local('TT Travels Medium Italic'), local('TTTravels-MediumItalic'),
+    url('../fonts/TTTravels-MediumItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTTravels-MediumItalic.woff') format('woff'),
+    url('../fonts/TTTravels-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Travels';
+    src: url('../fonts/TTTravels-BlackItalic.eot');
+    src: local('TT Travels Black Italic'), local('TTTravels-BlackItalic'),
+    url('../fonts/TTTravels-BlackItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTTravels-BlackItalic.woff') format('woff'),
+    url('../fonts/TTTravels-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Travels';
+    src: url('../fonts/TTTravels-ThinItalic.eot');
+    src: local('TT Travels Thin Italic'), local('TTTravels-ThinItalic'),
+    url('../fonts/TTTravels-ThinItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTTravels-ThinItalic.woff') format('woff'),
+    url('../fonts/TTTravels-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Travels';
+    src: url('../fonts/TTTravels-Light.eot');
+    src: local('TT Travels Light'), local('TTTravels-Light'),
+    url('../fonts/TTTravels-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTTravels-Light.woff') format('woff'),
+    url('../fonts/TTTravels-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Travels';
+    src: url('../fonts/TTTravels-Regular.eot');
+    src: local('TT Travels Regular'), local('TTTravels-Regular'),
+    url('../fonts/TTTravels-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTTravels-Regular.woff') format('woff'),
+    url('../fonts/TTTravels-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Travels';
+    src: url('../fonts/TTTravels-ExtraBoldItalic.eot');
+    src: local('TT Travels ExtraBold Italic'), local('TTTravels-ExtraBoldItalic'),
+    url('../fonts/TTTravels-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTTravels-ExtraBoldItalic.woff') format('woff'),
+    url('../fonts/TTTravels-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Travels';
+    src: url('../fonts/TTTravels-ExtraBold.eot');
+    src: local('TT Travels ExtraBold'), local('TTTravels-ExtraBold'),
+    url('../fonts/TTTravels-ExtraBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTTravels-ExtraBold.woff') format('woff'),
+    url('../fonts/TTTravels-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Travels';
+    src: url('../fonts/TTTravels-Black.eot');
+    src: local('TT Travels Black'), local('TTTravels-Black'),
+    url('../fonts/TTTravels-Black.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTTravels-Black.woff') format('woff'),
+    url('../fonts/TTTravels-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Travels';
+    src: url('../fonts/TTTravels-Medium.eot');
+    src: local('TT Travels Medium'), local('TTTravels-Medium'),
+    url('../fonts/TTTravels-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTTravels-Medium.woff') format('woff'),
+    url('../fonts/TTTravels-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Travels';
+    src: url('../fonts/TTTravels-DemiBold.eot');
+    src: local('TT Travels DemiBold'), local('TTTravels-DemiBold'),
+    url('../fonts/TTTravels-DemiBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTTravels-DemiBold.woff') format('woff'),
+    url('../fonts/TTTravels-DemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Travels';
+    src: url('../fonts/TTTravels-ExtraLightItalic.eot');
+    src: local('TT Travels ExtraLight Italic'), local('TTTravels-ExtraLightItalic'),
+    url('../fonts/TTTravels-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTTravels-ExtraLightItalic.woff') format('woff'),
+    url('../fonts/TTTravels-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Travels';
+    src: url('../fonts/TTTravels-DemiBoldItalic.eot');
+    src: local('TT Travels DemiBold Italic'), local('TTTravels-DemiBoldItalic'),
+    url('../fonts/TTTravels-DemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTTravels-DemiBoldItalic.woff') format('woff'),
+    url('../fonts/TTTravels-DemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Travels';
+    src: url('../fonts/TTTravels-BoldItalic.eot');
+    src: local('TT Travels Bold Italic'), local('TTTravels-BoldItalic'),
+    url('../fonts/TTTravels-BoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTTravels-BoldItalic.woff') format('woff'),
+    url('../fonts/TTTravels-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Travels';
+    src: url('../fonts/TTTravels-LightItalic.eot');
+    src: local('TT Travels Light Italic'), local('TTTravels-LightItalic'),
+    url('../fonts/TTTravels-LightItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTTravels-LightItalic.woff') format('woff'),
+    url('../fonts/TTTravels-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Travels';
+    src: url('../fonts/TTTravels-Bold.eot');
+    src: local('TT Travels Bold'), local('TTTravels-Bold'),
+    url('../fonts/TTTravels-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTTravels-Bold.woff') format('woff'),
+    url('../fonts/TTTravels-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Travels';
+    src: url('../fonts/TTTravels-Thin.eot');
+    src: local('TT Travels Thin'), local('TTTravels-Thin'),
+    url('../fonts/TTTravels-Thin.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTTravels-Thin.woff') format('woff'),
+    url('../fonts/TTTravels-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Muller';
+    src: url('../fonts/Fontfabric - MullerBlack.otf');
+    src: local('Muller'),
+    url('../fonts/Fontfabric - MullerBlack.otf') format('embedded-opentype'),
+    url('../fonts/Fontfabric - MullerBlack.otf') format('otf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+.page-wrapper {
+    background: #F8FBFB;
+    min-width: 320px;
+}
+
+.wrapper {
+    margin: 0 4.3% 0 12.5%;
+    position: relative;
+    max-width: 1600px;
+}
+
+.header-footer-wrapper {
+    margin: 0 4%;
+    padding: 40px 0;
+}
+
+header .header-footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mobile_tel, .mobile-header__top, .h-button {
+    display: none;
+}
+
+header {
+    text-transform: uppercase;
+
+    font-family: TT Travels, sans-serif;
+    font-size: 10px;
+    line-height: 12px;
+
+    letter-spacing: 0.2em;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    min-width: 520px;
+}
+
+header a {
+    text-decoration: none;
+    color: #273437;
+}
+
+p {
+    font-family: TT Travels, sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+
+    color: #344549;
+}
+
+.menu-item, .tel {
+    /*transition: color 0.3s ease 0s;*/ /* Мб из-за резкой смены логотипа не делать? */
+}
+
+.tel:hover, .menu-item:hover {
+    color: #FBE880;
+}
+
+.h-left {
+    display: flex;
+    justify-content: space-between;
+    width: 22%;
+    min-width: 275px;
+}
+
+.tel {
+    font-family: TT Travels, sans-serif;
+    font-size: 11px;
+    line-height: 13px;
+
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.logo {
+    display: inline-block;
+    width: 120px;
+    height: 10px;
+    background: url("../image/logo.svg");
+}
+
+.logo:hover {
+    background: url("../image/logo-hover.svg");
+}
+
+.reg {
+    position: relative;
+    padding-bottom: 7px;
+}
+
+.reg::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    border-bottom: 3px solid #FBE880;
+    transition: all 0.3s ease 0s;
+}
+
+.reg:hover::after {
+    width: 15px;
+    right: -15px;
+}
+
+.page-top {
+    padding-bottom: 90px;
+    padding-top: 155px;
+    position: relative;
+}
+
+.about-wrapper {
+    position: relative;
+    margin: 0 28.3% 0 12.5%;
+}
+
+.text-block__front {
+    padding-bottom: 13px;
+    padding-top: 15px;
+}
+
+.arrow-down {
+    display: block;
+    background: url('../image/down.svg') no-repeat;
+    width: 41px;
+    height: 43px;
+    position: absolute;
+    bottom: 107px;
+    left: 58px;
+}
+
+.text-block {
+    margin-left: 6%;
+    position: relative;
+    min-height: 150px;
+
+    border: 3px solid #273437;
+    box-shadow:
+        -1px -1px #AFC9CE, -2px -2px #AFC9CE,
+        -3px -3px #AFC9CE, -3px -4px #AFC9CE,
+        -4px -4px #AFC9CE, -4px -5px #AFC9CE,
+        -5px -5px #AFC9CE, -5px -6px #AFC9CE,
+        -6px -6px #AFC9CE, -6px -7px #AFC9CE,
+        -7px -7px #AFC9CE, -7px -8px #AFC9CE,
+        -8px -8px #AFC9CE, -8px -9px #AFC9CE,
+        -9px -9px #AFC9CE, -9px -10px #AFC9CE,
+        -10px -10px #AFC9CE, -10px -10px #AFC9CE,
+        -9px -11px #273437, -10px -12px #273437,
+        -9px -12px #273437, -9px -13px #273437,
+        -11px -13px #273437, -12px -11px #273437,
+        -13px -11px #273437, -13px -13px #273437;
+
+    background: #F8FBFB;
+}
+
+.text-block:before {
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    left: calc(-1.426 * 12px);
+    display: block;
+    height: 3px;
+    width: calc(1.5555 * 11px);
+    background: #273437;
+    transform: rotate(40deg);
+}
+
+.text-block::after {
+    content: "";
+    position: absolute;
+    top: calc(-1.426 * 10px + 4px);
+    right: -5px;
+    display: block;
+    height: 3px;
+    width: calc(1.4 * 12px - 1px);
+    background: #273437;
+    transform: rotate(56deg);
+}
+
+.about {
+    font-family: TT Travels, sans-serif;
+    margin: 6% 13% 4% 5%;
+}
+
+.about p {
+    font-family: TT Travels, sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+
+    color: #344549;
+}
+
+.text-block__back_wrapper {
+    padding: 13px 4% 6px 13px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 94%;
+    height: 195px;
+}
+
+.text-block__back {
+    position: relative;
+
+    width: 100%;
+    height: 200px;
+
+    border: 3px solid #273437;
+    box-shadow:
+        -1px -1px #FBE880, -2px -2px #FBE880,
+        -3px -3px #FBE880, -3px -4px #FBE880,
+        -4px -4px #FBE880, -4px -5px #FBE880,
+        -5px -5px #FBE880, -5px -6px #FBE880,
+        -6px -6px #FBE880, -6px -7px #FBE880,
+        -7px -7px #FBE880, -7px -8px #FBE880,
+        -8px -8px #FBE880, -8px -9px #FBE880,
+        -9px -9px #FBE880, -9px -10px #FBE880,
+        -10px -10px #FBE880, -10px -10px #FBE880,
+        -9px -11px #273437, -10px -12px #273437,
+        -9px -12px #273437, -9px -13px #273437,
+        -11px -13px #273437, -12px -11px #273437,
+        -13px -11px #273437, -13px -13px #273437;
+
+    background: #F8FBFB;
+}
+
+.text-block__back:before {
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    left: calc(-1.426 * 12px);
+    display: block;
+    height: 3px;
+    width: calc(1.5555 * 11px);
+    background: #273437;
+    transform: rotate(40deg);
+}
+
+.text-block__back::after {
+    content: "";
+    position: absolute;
+    top: calc(-1.426 * 10px + 4px);
+    right: -5px;
+    display: block;
+    height: 3px;
+    width: calc(1.4 * 12px - 1px);
+    background: #273437;
+    transform: rotate(56deg);
+}
+
+h1 {
+    font-family: TT Travels, sans-serif;
+    font-weight: 900;
+    letter-spacing: 0.15em;
+    line-height: 1.2;
+    display: inline-block;
+    position: relative;
+    font-size: 140px;
+
+    text-transform: lowercase;
+}
+
+.page-top h1 {
+    padding-bottom: 33px;
+    font-stretch: extra-expanded;
+    position: relative;
+    color: #F8FCFC;
+    -webkit-text-stroke: 4px #273437;
+
+    text-shadow: -5px -4px #273437;
+}
+
+.section {
+    padding-top: 153px;
+    padding-bottom: 143px;
+}
+
+.bg-blue {
+    background: #AFC9CE;
+}
+
+.bg-dark {
+    background: #273437;
+}
+
+.bg-dark h2, .bg-dark p {
+    color:  #F8FBFB;
+}
+
+.margin-top40px {
+    margin-top: 40px;
+}
+
+h2 {
+    font-family: TT Travels, sans-serif;
+    font-size: 60px;
+    line-height: 72px;
+
+    color: #273437;
+    position: relative;
+}
+
+.slider-wrapper {
+    position: relative;
+}
+
+.slider-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 213px;
+    left: -121px;
+    width: 64px;
+    height: 54px;
+    background: url('../image/equals-blue.svg') no-repeat;
+    cursor: pointer;
+}
+.vacancies::before {
+    content: '';
+    position: absolute;
+    top: 304px;
+    left: -119px;
+    width: 64px;
+    height: 54px;
+    background: url('../image/equals.svg') no-repeat;
+    cursor: pointer;
+}
+
+.yellow-equals::before {
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: -119px;
+    width: 64px;
+    height: 54px;
+    background: url('../image/equals-yellow.svg') no-repeat;
+    cursor: pointer;
+}
+
+.equals::before {
+     content: '';
+     position: absolute;
+     top: 64px;
+     left: -119px;
+     width: 64px;
+     height: 54px;
+     background: url("../image/equals.svg") no-repeat;
+    cursor: pointer;
+ }
+
+.blue-equals::before {
+    content: '';
+    position: absolute;
+    top: 64px;
+    left: -119px;
+    width: 64px;
+    height: 54px;
+    background: url("../image/equals-blue.svg") no-repeat;
+    cursor: pointer;
+}
+
+h3 {
+    font-family: TT Travels, sans-serif;
+    font-size: 36px;
+    line-height: 43px;
+
+    color: #273437;
+}
+
+h3 + p {
+    margin-top: 25px;
+}
+
+strong {
+    color: #fbe880;
+}
+
+.advantages {
+    position: relative;
+    padding-bottom: 18px;
+}
+
+.icon {
+    margin-bottom: 40px;
+}
+
+.block_0 {
+    display: inline-block;
+    position: relative;
+    margin-right: 45%;
+    margin-left: 10px;
+    margin-top: 180px;
+
+    padding: 75px 120px 58px 48px;
+
+    border: 3px solid #273437;
+    box-shadow: -9px 10px #FBE880;
+    z-index: 1;
+    background: #F8FBFB;
+}
+
+.block_1 {
+    position: absolute;
+    top: 128px;
+    right: 0;
+    width: 39%;
+    padding: 72px 36px 58px 57px;
+    box-shadow: -14px -16px #AFC9CE;
+    border: 3px solid #273437;
+    background: #F8FBFB;
+}
+
+.block_2 {
+    display: inline-block;
+    position: relative;
+    margin-right: 51.5%;
+    margin-left: 12px;
+    margin-top: 179px;
+    padding: 73px 38px 99px 47px;
+    box-shadow: -12px 18px #AFC9CE;
+    border: 3px solid #273437;
+    z-index: 2;
+    background: #F8FBFB;
+}
+
+
+.block_3 {
+    display: inline-block;
+    position: absolute;
+    bottom: 96px;
+    right: 0;
+    width: 40%;
+    padding: 81px 91px 94px 80px;
+    box-shadow: -10px -10px #FBE880;
+    border: 3px solid #273437;
+    z-index: 1;
+    background: #F8FBFB;
+}
+
+.marquee {
+    background: #FBE880;
+    border-bottom: 3px solid #273437;
+    border-top: 3px solid #273437;
+    overflow: hidden;
+    margin-top: 34px;
+}
+
+.marquee-inner {
+    padding: 60px 0;
+    font: 900 145px/170px 'TT Travels';
+    letter-spacing: 0.15em;
+    white-space: nowrap;
+    display: inline-block;
+    animation: marquee 10s linear infinite;
+    -webkit-text-stroke: 6px black;
+}
+
+@keyframes marquee{
+    0%{
+        transform:translate3d(0, 0, 0);
+    }
+    100%{
+        transform:translate3d(-50%, 0, 0);
+    }
+}
+
+.marquee-inner span:nth-child(even){
+    color: #F8FBFB;
+}
+
+.marquee-inner span:nth-child(odd) {
+    color: #AFC9CE;
+}
+
+.marquee-inner span {
+    padding-right: 55px;
+}
+
+.slider {
+    padding-top: 98px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider-inner {
+    display: flex;
+    flex-direction: row;
+}
+
+.slide {
+    margin-right: 200px;
+}
+
+.slide .img {
+    width: 18.5vw;
+    height: 18.5vw;
+}
+
+.img-wrapper {
+    width: 18.5vw;
+    height: 18.5vw;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+h4 {
+    font-family: TT Travels, sans-serif;
+    font-size: 22px;
+    line-height: 26px;
+
+    color: #273437;
+}
+
+.slide p {
+    font-family: TT Travels, sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+
+    color: #273437;
+    margin-top: 18px;
+}
+
+.slide h4 {
+    margin-top: 40px;
+}
+
+.slider-buttons__top {
+    position: absolute;
+    /* width: 465px; */
+    width: 42%;
+    height: 27px;
+    display: flex;
+    justify-content: space-between;
+    top: 37%;
+    left: 29%;
+}
+
+.slider-buttons__top .button-left,
+.slider-buttons__top .button-right {
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+.slider-buttons__top .button-left {
+    background: url("../image/slider-arrow_left.svg") repeat-x;
+    width: 35px;
+    background-size: contain;
+}
+
+.slider-buttons__top .button-left:hover {
+    background-image: url("../image/slider-arrow_left__active.svg");
+    width: 37px;
+}
+
+.slider-buttons__top .button-right {
+    background: url("../image/slider-arrow_right.svg") repeat-x;
+    width: 37px;
+    background-size: contain;
+}
+
+.slider-buttons__top .button-right:hover {
+    background-image: url("../image/slider-arrow_right__active.svg");
+    width: 37px;
+}
+
+.slider-bottom-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.slider-buttons__bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    min-width: 360px;
+    padding: 10px 0;
+    margin-top: 74px;
+}
+
+.slider-buttons__bottom .page-numbers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60%;
+    padding-left: 4px;
+}
+
+.slider-buttons__bottom .button-left,
+.slider-buttons__bottom .button-right {
+    transition: all 0.3s ease 0s;
+}
+
+.slider-buttons__bottom .button-left {
+    background: url("../image/slider-arrow_left.svg") space;
+    width: 38px;
+    height: 27px;
+    background-size: contain;
+}
+
+.slider-buttons__bottom .button-right {
+    background: url("../image/slider-arrow_right.svg") space;
+    width: 38px;
+    height: 27px;
+    background-size: contain;
+}
+
+.slider-buttons__bottom .button-left:hover {
+    background-image: url("../image/slider-arrow_left__active.svg");
+}
+
+.slider-buttons__bottom .button-right:hover {
+    background-image: url("../image/slider-arrow_right__active.svg");
+}
+
+.slider-buttons__bottom .page-button {
+    width: 54px;
+    height: 54px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 3px solid #273437;
+    background: #FBE880;
+
+    box-shadow: -4px -6px #273437;
+
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+
+    font-family: Muller, sans-serif;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.1em;
+
+    color: #273437;
+}
+
+.slider-buttons__bottom .page-button:hover {
+    box-shadow: none;
+    background: transparent;
+}
+
+.vacancies {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+    /* grid-template-rows: repeat(auto-fill, minmax(40%, 1fr)); */
+    grid-column-gap: 41px;
+    /*Хотел использовать grid-row-gap, но оно не расширяло блок, сделал маргины у детей*/
+    padding-top: 96px;
+    padding-bottom: 146px;
+    position: relative;
+}
+
+.vacancy {
+    padding: 33px 86px 41px 50px;
+    margin-top: 58px;
+    border-top: 5px solid #273437;
+    border-left: 5px solid #273437;
+    height: fit-content;
+    position: relative;
+    cursor: pointer;
+}
+
+.vacancy::after {
+    content: '';
+    position: absolute;
+    top: 36px;
+    right: 10px;
+    width: 120px;
+    height: 31px;
+    opacity: 0;
+    background: url("../image/vacancy__after.svg") no-repeat;
+    transition: all 0.3s ease 0s;
+}
+
+.vacancy:hover::after {
+    opacity: 1;
+}
+
+.vacancy:first-child, .vacancy:nth-child(2) {
+    margin-top: 0;
+}
+
+.vacancy a {
+    font: 600 22px/26px 'TT Travels';
+    text-decoration: none;
+    color: #273437;
+}
+
+.show-more {
+    padding: 20px 49px 18px 46px;
+    width: 421px;
+    /* min-width: 422px; */
+    background: #FBE880;
+    box-shadow: -4px -6px #273437;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease 0s;
+}
+
+.show-more .mobile {
+    display: none;
+}
+
+.show-more .desktop {
+    display: initial;
+}
+
+.show-more_wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    overflow: hidden;
+}
+
+.show-more:hover {
+    box-shadow: none;
+    transform: translate(-4px, -6px);
+}
+
+.show-more span::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 23px;
+    right: -7px;
+    top: 0;
+    position: absolute;
+    background: url(../image/show-more__down.svg) space;
+}
+
+.show-more span {
+    font: 600 16px/19px 'TT Travels';
+    letter-spacing: 0.7em;
+    text-transform: uppercase;
+    color: #273437;
+    position: relative;
+    padding-right: 49px;
+}
+
+.input-pair, .button-box {
+    padding-top: 93px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-box {
+    padding-top: 85px;
+    justify-content: left;
+}
+
+.contact_us {
+    transition: all 0.3s ease 0s;
+}
+
+.contact_us input {
+    font: 600 22px/26px "TT Travels";
+    color: #F8FBFB;
+
+    padding-top: 10px;
+    width: 48.3%;
+    padding-bottom: 12px;
+
+    border: none;
+    background: transparent;
+    border-bottom: 3px solid #C1D6DA;
+    outline: none;
+}
+
+.contact_us input::placeholder {
+    color: #F8FBFB;
+}
+
+.contact_us .comment {
+    margin-top: 141px;
+    width: 100%;
+}
+
+.message-field {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transition: all 0.3s ease 0s;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.send {
+    margin-left: 6px;
+    margin-top: 2px;
+    width: 41%;
+    min-width: 380px;
+    padding: 22px 200px 18px 50px;
+    position: relative;
+    cursor: pointer;
+    background: #FBE880;
+    font: 600 16px/19px "TT Travels";
+    letter-spacing: 0.7em;
+    text-transform: uppercase;
+    text-align: left;
+    color: #273437;
+    outline: none;
+    border: none;
+    box-shadow: -3px -3px #273437, -6px -6px #FBE880;
+    transition: all 0.3s ease 0s;
+}
+
+.send:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: none;
+}
+
+.send:before {
+    content: "";
+    position: absolute;
+    top: 17px;
+    right: 60px;
+    display: inline-block;
+    width: 69px;
+    height: 31px;
+    background: url("../image/-->.svg");
+}
+
+.send::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    width: 49px;
+    height: 31px;
+    background: url('../image/>>.svg') space;
+}
+
+.checkbox {
+    font: 18px/22px "TT Travels";
+    color: #F8FBFB;
+    /* width: 50%; */
+    display: flex;
+    align-items: center;
+    margin-left: 39px;
+    margin-top: 8px;
+}
+
+.checkbox input:before {
+    content: "";
+    pointer-events: none;
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: visible;
+
+    background: #273437;
+    border: 3px solid #C1D6DA;
+    z-index: 1;
+
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+.checkbox input:checked:before {
+    background: #FBE880;
+}
+
+.checkbox input {
+    position: relative;
+    z-index: 0;
+    width: 34px;
+    height: 34px;
+    cursor: pointer;
+}
+
+.checkbox span {
+    padding-left: 15px;
+}
+
+footer nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding-top: 54px;
+}
+
+footer nav .left{
+    width: 50%;
+    text-transform: uppercase;
+}
+
+footer .left, footer .right {
+    width: 41%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 37px;
+}
+
+footer nav .left a, footer nav .right a {
+    font: 600 14px/17px "TT Travels";
+    letter-spacing: 0.1em;
+    color: #273437;
+    text-decoration: none;
+    padding-bottom: 5px;
+
+    transition: color 0.3s ease 0s;
+}
+
+footer nav .right a {
+    font-weight: 300;
+    position: relative;
+}
+
+footer nav .right a::after {
+    content: "";
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    background: #FBE880;
+    transition: all 0.3s ease 0s;
+}
+
+footer nav .right a:hover::after {
+    width: 0;
+}
+
+footer nav .left a:hover {
+    color: #FBE880;
+}
+
+.mailing {
+    padding-top: 106px;
+}
+
+.mailing span {
+    font: 600 14px/17px "TT Travels";
+
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: #273437;
+}
+
+.mail {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    position: relative;
+}
+
+.mail input {
+    font: 16px/23px "TT Travels";
+    color: #273437;
+
+    margin-top: 15px;
+    padding: 10px 0;
+    width: 50%;
+
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid #273437;
+
+    outline: none;
+}
+
+.mail::after {
+    content: "";
+    width: 52px;
+    height: 16px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: calc(47% - 6px);
+    background: url('../image/ solid -->.svg') round;
+    cursor: pointer;
+}
+
+.mail input::placeholder {
+    font: 16px/23px "TT Travels";
+
+    color: #273437;
+}
+
+.soc-networks {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    width: 44%;
+}
+
+.soc-network {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    font: 14px/17px "TT Travels";
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: #FBE880;
+    cursor: pointer;
+
+    background: #273437;
+    margin-right: 16px;
+}
+
+.footer-bottom {
+    padding-top: 130px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.conf {
+    width: 48%;
+    font: 18px/26px "TT Travels";
+
+    color: #273437;
+}
+
+.conf a {
+    margin-left: 22px;
+    font: 16px/23px "TT Travels";
+    position: relative;
+
+    color: #273437;
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+
+.conf a::after {
+    content: "";
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    background: #FBE880;
+    transition: all 0.3s ease 0s;
+}
+
+.conf a:hover::after {
+    width: 0;
+}
+
+.made-by a {
+    margin-left: 55px;
+    font: 18px/26px "TT Travels";
+    position: relative;
+
+    color: #273437;
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+
+.made-by a:before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 17px;
+    position: absolute;
+    left: -55px;
+    top: 0;
+    background: url("../image/logo-black.svg") round;
+}
+
+.made-by a::after {
+    content: "";
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    background: #FBE880;
+    transition: all 0.3s ease 0s;
+}
+
+.made-by a:hover::after {
+    width: 0;
+}
+
+@media screen and (max-width: 1024px){
+    .equals {
+        display: none;
+    }
+
+    .arrow-down {
+        display: none;
+    }
+
+    .block_0, .block_1, .block_2, .block_3 {
+        width: auto;
+        position: initial;
+        padding: 50px 25px 60px 30px;
+        margin-top: 50px;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .block_0 {
+        margin-top: 70px;
+    }
+
+    .block_1 {
+        margin-top: 50px;
+        width: auto;
+    }
+
+    .wrapper {
+        margin: 0 4.3% 0 4%;
+    }
+
+    .tel, header nav {
+             display: none;
+    }
+
+    .h-button {
+        display: block;
+        width: 5%;
+        height: 11px;
+        background: url("../image/menu-button.svg") round;
+        background-size: cover;
+        border: none;
+        padding: 0;
+        outline: none;
+    }
+
+    .mobile-header__top .active {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        font: 10px/12px "TT Travels";
+
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+
+        color: #273437;
+    }
+
+    .show-more {
+        width: auto;
+        min-width: 0;
+        padding: 16px 35px;
+    }
+
+    .show-more .desktop {
+        display: none;
+    }
+
+    .show-more .mobile {
+        display: initial;
+    }
+
+}
+
+@media screen and (min-width: 640px) and (max-width: 1024px) {
+
+    h1 {
+        font-size: 100px;
+    }
+
+    h2 {
+        font-size: 39px;
+        line-height: 54px;
+    }
+
+    h3 {
+        font-size: 25px;
+        line-height: 33px;
+    }
+
+    h4 {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    h3 + p {
+        margin-top: 20px;
+    }
+
+    .advantages {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .icon {
+        margin-bottom: 34px;
+    }
+
+    .about p {
+        font-size: 16px;
+        line-height: 23px;
+    }
+
+    .text-block {
+        max-width: 50%;
+        margin-left: 0;
+    }
+
+    .text-block__back_wrapper {
+        left: -15%;
+        height: 54%;
+        max-width: 50%;
+    }
+
+    .marquee {
+        padding: 20px 0;
+    }
+
+    .marquee-inner {
+        font-size: 60px;
+        line-height: 64px;
+    }
+
+    .slider-buttons__top {
+        left: 26%;
+    }
+
+    .slider-buttons__bottom .page-button {
+        width: 45px;
+        height: 45px;
+    }
+
+    .vacancy {
+        padding: 24px 0 24px 20px;
+        border: none;
+        border-top: 3px solid #273437;
+        border-left: 3px solid #273437;
+    }
+
+    .vacancy a {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .contact_us input {
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+    .contact_us div {
+        transition: opacity 0.3s ease 0s;
+    }
+
+    .contact_us .input-pair {
+        padding-top: 45px;
+    }
+
+    .contact_us .comment {
+        margin-top: 75px;
+    }
+
+    .contact_us .send::before, .contact_us .send::after {
+        content: none;
+    }
+
+    .contact_us .send {
+        width: auto;
+        min-width: 0;
+        padding: 14px 35px;
+    }
+
+    .button-box {
+        padding-top: 75px;
+    }
+
+    .checkbox span {
+        padding: 0;
+    }
+
+    .checkbox label {
+        padding-left: 10px;
+    }
+
+    .mail input {
+        width: 50%;
+    }
+
+    .mail::after {
+        left: calc(43% - 5px);
+    }
+
+    footer nav{
+        flex-direction: column;
+        padding-top: 25px;
+    }
+
+    footer nav .left, footer nav .right {
+        width: auto;
+    }
+
+    footer nav .right {
+        padding-top: 25px;
+    }
+
+    .footer-bottom {
+        padding-top: 60px;
+    }
+
+    .conf {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .conf a {
+        margin: 0;
+        width: fit-content;
+    }
+
+    .made-by {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+}
+
+@media screen and (max-width: 639px){
+    .wrapper {
+        margin: 0 7.3% 0 8%;
+    }
+
+    .section {
+        margin-top: 50px;
+    }
+
+    .text-block__back_wrapper {
+        left: -10%;
+        width: 81%;
+        height: 62%;
+    }
+
+    .page-top {
+        padding-top: 5.5vh;
+    }
+
+    .page-top h1 {
+        font-size: 50px;
+        text-shadow: -3px -2px #273437;
+        -webkit-text-stroke: 2px #273437;
+    }
+    .about p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .block_0 {
+        margin-top: 50px;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    h2 {
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    h3 {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    h3 + p {
+        margin-top: 20px;
+    }
+
+    .icon {
+        width: 55px;
+        height: 55px;
+        margin-bottom: 34px;
+    }
+
+    .marquee-inner {
+        font-size: 40px;
+        line-height: 48px;
+        -webkit-text-stroke: 2px #273437;
+    }
+
+    .slider {
+        padding-top: 15%;
+    }
+
+    .slide {
+        margin: 0;
+        min-width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        position: relative;
+    }
+
+    .slide .img {
+        width: 70%;
+        height: 0;
+        padding-top: 70%;
+    }
+
+    .slider-buttons__top {
+        width: 95%;
+        top: 40%;
+        left: 2%;
+    }
+
+    .vacancies {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+
+    .vacancy:nth-child(2) {
+        margin-top: 7.5%;
+    }
+
+    .vacancy span {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .vacancy:hover::after {
+        content: none;
+    }
+
+    .show-more_wrapper {
+        justify-content: left;
+    }
+
+    .show-more span {
+        font-size: 11px;
+        line-height: 13px;
+    }
+
+    .show-more span::after {
+        width: 11px;
+        height: 17px;
+        background-repeat: round;
+    }
+
+    .input-pair {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .input-pair input {
+        width: 100%;
+        margin-top: 50px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .contact_us .comment {
+        margin-top: 100px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .send::before, .send::after {
+        content: none;
+    }
+
+    .button-box {
+        padding-top: 50px;
+        flex-direction: column-reverse;
+    }
+
+    .checkbox {
+        padding-bottom: 30px;
+        width: 100%;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .checkbox input {
+       flex-shrink: 0;
+    }
+    .checkbox span {
+        flex-shrink: 0;
+        display: inline-block;
+    }
+
+    .send {
+        font-size: 11px;
+        line-height: 13px;
+        padding: 14px 35px;
+        min-width: 205px;
+    }
+
+    footer nav {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    footer nav .left, footer nav .right {
+        width: 100%;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    footer nav .left {
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.1em;
+        padding-top: 50px;
+    }
+
+    footer nav a {
+        padding-top: 30px;
+    }
+
+    footer nav .right a {
+        width: fit-content;
+    }
+
+    .mailing span {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .mail {
+        flex-direction: column;
+    }
+
+    .mail::after {
+        top: 20%;
+        left: 85%;
+    }
+
+    .mailing input, .soc-networks {
+        width: 100%;
+    }
+
+    .soc-networks {
+        padding-top: 40px;
+    }
+
+    .footer-bottom {
+        padding-top: 60px;
+        flex-direction: column;
+    }
+
+    .conf {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .conf span, .conf a {
+        display: block;
+        width: fit-content;
+        margin: 0;
+        padding-top: 20px;
+    }
+
+    .made-by {
+        padding-top: 55px;
+    }
+
+    .made-by a {
+        visibility: hidden;
+    }
+
+    .made-by a::before {
+        visibility: visible;
+    }
+}
